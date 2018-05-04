@@ -1,0 +1,274 @@
+/*不透明度效果*/
+._flash {
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both
+	-webkit-animation-name: flash;
+	animation-name: flash
+}
+
+
+@-webkit-keyframes flash {
+	0%,50%,to {
+		opacity: 1
+	}
+
+	25%,75% {
+		opacity: 0
+	}
+}
+
+@keyframes flash {
+	0%,50%,to {
+		opacity: 1
+	}
+
+	25%,75% {
+		opacity: 0
+	}
+}
+
+
+
+._anFlash {
+		animation-name: anFlash;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 0.2s;
+
+    /* Safari and Chrome */
+    -webkit-animation-name: anFlash;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 0.2s;
+}
+
+@keyframes anFlash {
+    from { opacity: 0; }
+    50%  { opacity:   0.8; }
+    to   { opacity: 0; }
+}
+
+@-webkit-keyframes anFlash {
+    from { opacity: 0; }
+    50%  { opacity:   0.8; }
+    to   { opacity: 0; }
+}
+
+._anOpacity2 {
+	/* IE10、Firefox and Opera，IE9以及更早的版本不支持 */
+	animation-name: breath2;
+	/* 动画名称 */
+	animation-timing-function: ease-in-out;
+	/* 动画速度曲线：以低速开始和结束 */
+	animation-iteration-count: 1;
+	/* 播放次数：无限 */
+	animation-duration: 2s;
+	/* 动画时长3秒 */
+	/* Safari and Chrome */
+	-webkit-animation-name: breath2;
+	/* 动画名称 */
+	-webkit-animation-timing-function: ease-in-out;
+	/* 动画速度曲线：以低速开始和结束 */
+	-webkit-animation-duration: 2s;
+	/* 动画时长3秒 */
+	-webkit-animation-iteration-count: 1;
+	/* 播放次数：无限 */
+}
+
+@keyframes breath2 {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0.3;
+	}
+	/* 动画结束时的不透明度 */
+}
+
+@-webkit-keyframes breath2 {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0.3;
+	}
+	/* 动画结束时的不透明度 */
+}
+
+._anOpacity {
+	/* IE10、Firefox and Opera，IE9以及更早的版本不支持 */
+	animation-name: breath;
+	/* 动画名称 */
+	animation-timing-function: ease-in-out;
+	/* 动画速度曲线：以低速开始和结束 */
+	animation-iteration-count: 1;
+	/* 播放次数：无限 */
+	animation-duration: 3s;
+	/* 动画时长3秒 */
+	/* Safari and Chrome */
+	-webkit-animation-name: breath;
+	/* 动画名称 */
+	-webkit-animation-timing-function: ease-in-out;
+	/* 动画速度曲线：以低速开始和结束 */
+	-webkit-animation-duration: 3s;
+	/* 动画时长3秒 */
+	-webkit-animation-iteration-count: 1;
+	/* 播放次数：无限 */
+}
+
+@keyframes breath {
+	from {
+		opacity: 0;
+	}
+	/* 动画开始时的不透明度 */
+	50% {
+		opacity: 1;
+	}
+	/* 动画50% 时的不透明度 */
+	90% {
+		opacity: 1;
+	}
+	/* 动画50% 时的不透明度 */
+	to {
+		opacity: 0;
+	}
+	/* 动画结束时的不透明度 */
+}
+
+@-webkit-keyframes breath {
+	from {
+		opacity: 0;
+	}
+	/* 动画开始时的不透明度 */
+	50% {
+		opacity: 1;
+	}
+	/* 动画50% 时的不透明度 */
+	90% {
+		opacity: 1;
+	}
+	/* 动画50% 时的不透明度 */
+	to {
+		opacity: 0;
+	}
+	/* 动画结束时的不透明度 */
+}
+
+._anHeight {
+	/* IE10、Firefox and Opera，IE9以及更早的版本不支持 */
+	animation-name: anHeight;
+	/* 动画名称 */
+	animation-timing-function: ease-in-out;
+	/* 动画速度曲线：以低速开始和结束 */
+	animation-iteration-count: infinite;
+	/* 播放次数：无限 */
+	animation-duration: 3s;
+	/* 动画时长3秒 */
+	/* Safari and Chrome */
+	-webkit-animation-name: anHeight;
+	/* 动画名称 */
+	-webkit-animation-timing-function: ease-in-out;
+	/* 动画速度曲线：以低速开始和结束 */
+	-webkit-animation-duration: 3s;
+	/* 动画时长3秒 */
+	-webkit-animation-iteration-count: infinite;
+	/* 播放次数：无限 */
+}
+
+@keyframes anHeight {
+	from {
+		bottom: 0;
+        opacity: 1;
+	}
+	/* 动画开始时的不透明度 */
+	50% {
+		bottom: 100px;
+        opacity: 0;
+	}
+	/* 动画50% 时的不透明度 */
+	to {
+		bottom: 0;
+        opacity: 0;
+	}
+	/* 动画结束时的不透明度 */
+}
+
+@-webkit-keyframes anHeight {
+	from {
+		bottom: 0;
+        opacity: 1;
+	}
+	/* 动画开始时的不透明度 */
+	50% {
+		bottom: 100px;
+        opacity: 0;
+	}
+	/* 动画50% 时的不透明度 */
+	to {
+		bottom: 0;
+        opacity: 0;
+	}
+	/* 动画结束时的不透明度 */
+}
+
+._anHeight2 {
+	/* IE10、Firefox and Opera，IE9以及更早的版本不支持 */
+	animation-name: anHeight2;
+	/* 动画名称 */
+	animation-timing-function: ease-in-out;
+	/* 动画速度曲线：以低速开始和结束 */
+	animation-iteration-count: infinite;
+	/* 播放次数：无限 */
+	animation-duration: 3s;
+	/* 动画时长3秒 */
+    animation-delay:1.5s;
+    /* 动画延时3s */
+	/* Safari and Chrome */
+	-webkit-animation-name: anHeight2;
+	/* 动画名称 */
+	-webkit-animation-timing-function: ease-in-out;
+	/* 动画速度曲线：以低速开始和结束 */
+	-webkit-animation-duration: 3s;
+	/* 动画时长3秒 */
+	-webkit-animation-iteration-count: infinite;
+	/* 播放次数：无限 */
+    -webkit-animation-delay:1.5s; /* Safari 和 Chrome */
+}
+
+@keyframes anHeight2 {
+	from {
+		bottom: 0;
+        opacity: 1;
+	}
+	/* 动画开始时的不透明度 */
+	50% {
+		bottom: 200px;
+        opacity: 0;
+	}
+	/* 动画50% 时的不透明度 */
+	to {
+		bottom: 0;
+        opacity: 0;
+	}
+	/* 动画结束时的不透明度 */
+}
+
+@-webkit-keyframes anHeight2 {
+	from {
+		bottom: 0;
+        opacity: 1;
+	}
+	/* 动画开始时的不透明度 */
+	50% {
+		bottom: 200px;
+        opacity: 0;
+	}
+	/* 动画50% 时的不透明度 */
+	to {
+		bottom: 0;
+        opacity: 0;
+	}
+	/* 动画结束时的不透明度 */
+}
